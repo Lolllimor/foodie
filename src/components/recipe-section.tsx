@@ -4,7 +4,7 @@ import { HiChartBar } from "react-icons/hi2";
 export const RecipeSection = () => {
   const data = [
     { img: "/images/salad.svg", name: "Creamy Salad" },
-    { img: "/images/tofu.svg", name: "Tofu Tomatoes Soup " },
+    { img: "/images/tofu.svg", name: "Tofu Soup " },
     { img: "/images/potatoes.svg", name: "Crunchy Potatoes" },
   ];
   const data2 = [
@@ -14,7 +14,7 @@ export const RecipeSection = () => {
   ];
 
   return (
-    <div className="flex py-[100px] bg-white px-[80px] gap-[100px] flex-col">
+    <div className="flex py-[100px] bg-white px-[80px] gap-[50px] flex-col">
       <div className="flex items-center justify-between w-full">
         <div className="flex flex-col gap-[2px]">
           <h2 className="text-black text-[35px] font-[700]">
@@ -28,10 +28,10 @@ export const RecipeSection = () => {
           See All
         </button>
       </div>
-      <div className="flex gap-[40px] flex-col">
-        <div className="flex justify-between w-full gap-[20px] overflow-x-scroll no-scrollbar">
+      <div className="flex gap-[50px] flex-col">
+        <div className="flex justify-between w-full gap-[20px] overflow-x-auto no-scrollbar">
           {data.map((item) => (
-            <div className="bg-white w-[100%]">
+            <div className="bg-white w-[375px] min-w-[375px]">
               <div
                 className={`h-[265px]  bg-no-repeat flex-col bg-cover flex justify-end rounded-t-2xl w-[100%]`}
                 style={{ backgroundImage: `url(${item.img})` }}
@@ -52,8 +52,7 @@ export const RecipeSection = () => {
                 </div>
               </div>
               <div className="bg-white px-[20px] pt-[10px] pb-[20px] drop-shadow-md rounded-b-2xl">
-                <h3 className="font-[700] text-[40px] text-[#000]">
-                  {" "}
+                <h3 className="font-[700] text-[40px] text-[#000] text-nowrap">
                   {item.name}
                 </h3>
                 <p className="text-[#F79F1A] underline-offset-2 underline">
@@ -63,7 +62,7 @@ export const RecipeSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-between w-full gap-[20px] overflow-x-scroll no-scrollbar">
+        <div className="flex justify-between w-full gap-[20px] overflow-x-auto no-scrollbar">
           {data2.map((item) => (
             <div className="bg-white w-[435px]">
               <div

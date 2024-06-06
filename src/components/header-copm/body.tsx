@@ -19,8 +19,8 @@ export const Body = () => {
         </button>
       </div>
 
-      <div className="relative w-[60%]">
-        <img src="/images/header-food.svg" className="h-fit" />
+      <div className="relative w-[60%] ">
+        <img src="/images/header-food.svg" className="h-full"/>
         <div className="absolute top-[44%] right-[25%] ">
           <Cards />
         </div>

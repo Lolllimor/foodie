@@ -1,3 +1,5 @@
+import { TextInput } from "@mantine/core";
+
 export const Footer = () => {
   return (
     <div className="bg-[url('/images/footer-bg.svg')] h-[429px] w-full px-[100px] py-[50px]">
@@ -33,10 +35,16 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-start w-[30%]">
+        <div className="flex justify-start w-[30%] flex-col gap-14 ">
           <h3 className="font-[700] text-[16px] mb-[15px]">
             Sign up for our newsletter
           </h3>
+          <div className="flex border-b pb-[5px]">
+            <TextInput className=" w-full" placeholder="Your email address" />
+            <button className="bg-[#F79F1A] text-white  py-[5px] px-[10px]  rounded-2xl">
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     </div>

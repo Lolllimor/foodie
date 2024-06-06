@@ -6,10 +6,11 @@ import {
   Header,
   RecipeSection,
 } from "@/src/components";
+import { MantineProvider } from "@mantine/core";
 
 export default function Home() {
   return (
-    <main className="h-screen w-screen">
+    <MantineProvider>  <main className="h-screen w-screen min-w-[1440px]">
       <Header />
       <RecipeSection />
       <AboutUs />
@@ -17,5 +18,6 @@ export default function Home() {
       <CTA />
       <Footer />
     </main>
-  );
+  </MantineProvider>
+  )
 }

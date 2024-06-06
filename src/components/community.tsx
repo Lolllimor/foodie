@@ -33,7 +33,7 @@ export const Community = () => {
   ];
 
   return (
-    <div className="py-[100px] flex flex-col items-center">
+    <div className="py-[50px] flex flex-col items-center">
       <h1 className=" text-[42px] font-[700] text-[#000] mb-[50px]">
         From Our Community
       </h1>
